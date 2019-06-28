@@ -39,11 +39,9 @@ INSTALLED_APPS = [
 
     'rest_framework.authtoken',
 
-    # 'rest_auth',
-    # 'rest_auth.registration',
-
     # 'news',
-    'ebooks',
+    # 'ebooks',
+    'profiles',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +119,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+MEDIA_URL = "/media/"
+MEDIA_ROOT = "uploads"
 
 # REST_FRAMEWORK = {
 #     'DEFAULT_PERMISSION_CLASSES': (
